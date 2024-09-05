@@ -71,7 +71,7 @@ export class PromiseStore<T extends (...args: any[]) => Promise<any>> {
 			onError?: (error: Error) => void;
 			onFinally?: () => void;
 			defaultStatus?: Status;
-		}
+		} = {}
 	) {
 		this._promise = promise;
 		this.opts = opts;

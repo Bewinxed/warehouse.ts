@@ -1,1 +1,1 @@
-export * from './promiseStore.js';
+export * from './promiseStore.svelte.js';

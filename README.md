@@ -13,15 +13,15 @@ warehouse.ts is a collection of reactive state management utilities for SvelteKi
 
 To install warehouse.ts, run the following command in your project directory:
 
-\```bash
+```bash
 npm install warehouse.ts
-\```
-\```bash
+```
+```bash
 pnpm install warehouse.ts
-\```
-\```bash
+```
+```bash
 bun install warehouse.ts
-\```
+```
 
 ## Usage
 
@@ -29,7 +29,7 @@ bun install warehouse.ts
 
 The `PromiseStore` class wraps a promise and provides reactive state management:
 
-\```typescript
+```typescript
 import { createPromiseStore } from 'warehouse.ts';
 
 const myAsyncFunction = async () => {
@@ -49,13 +49,13 @@ myPromiseStore.promise();
 console.log(myPromiseStore.status);
 console.log(myPromiseStore.result);
 console.log(myPromiseStore.error);
-\```
+```
 
 ### PromiseMap
 
 The `PromiseMap` class manages multiple `PromiseStore` instances:
 
-\```typescript
+```typescript
 import { PromiseMap } from 'warehouse.ts';
 
 const promiseMap = new PromiseMap();
@@ -66,7 +66,7 @@ promiseMap.set('posts', fetchPosts, { /* options */ });
 // Access individual PromiseStore instances
 const userPromise = promiseMap.get('user');
 const postsPromise = promiseMap.get('posts');
-\```
+```
 
 ## API Reference
 
